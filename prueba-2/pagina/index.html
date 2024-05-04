@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bikes Frontend</title>
+    <!-- Agregar la referencia a Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container mt-5">
+        <h1 class="mb-4">Bikes Frontend</h1>
+        <div id="bikes-list"></div>
+        <h2 class="mt-5 mb-3">Agregar Nueva Motocicleta</h2>
+        <form id="add-bike-form">
+            <div class="form-group">
+                <label for="id">ID:</label>
+                <input type="number" class="form-control" id="id" name="id" required>
+            </div>
+            <div class="form-group">
+                <label for="marca">Marca:</label>
+                <input type="text" class="form-control" id="marca" name="marca" required>
+            </div>
+            <div class="form-group">
+                <label for="modelo">Modelo:</label>
+                <input type="text" class="form-control" id="modelo" name="modelo" required>
+            </div>
+            <div class="form-group">
+                <label for="año">Año:</label>
+                <input type="number" class="form-control" id="año" name="año" required>
+            </div>
+            <div class="form-group">
+                <label for="color">Color:</label>
+                <input type="text" class="form-control" id="color" name="color" required>
+            </div>
+            <div class="form-group">
+                <label for="kilometraje">Kilometraje:</label>
+                <input type="number" class="form-control" id="kilometraje" name="kilometraje" required>
+            </div>
+            <div class="form-group">
+                <label for="photo">Foto:</label>
+                <input type="file" class="form-control" id="imagen" name="photo" accept="image/*" required>
+            </div>
+            <button type="submit" class="btn btn-primary">Agregar</button>
+        </form>
+        
+    </div>
+
+    <!-- Agregar la referencia a Bootstrap JS y jQuery (necesario para Bootstrap) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- Agregar el archivo JavaScript personalizado -->
+    <script src="script.js"></script>
+</body>
+</html>
